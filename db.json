@@ -1,0 +1,133 @@
+{
+  "users": [
+    {
+      "username": "superAdmin",
+      "contact": "17348537",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "role": "admin",
+      "permissionAccess": true,
+      "id": 1
+    },
+    {
+      "username": "user",
+      "contact": "17348537",
+      "email": "user@gmail.com",
+      "password": "user123",
+      "role": "user",
+      "permissionAccess": true,
+      "id": 1
+    },
+    {
+      "name": "fggf",
+      "userName": "eee",
+      "password": "eeee",
+      "conPassword": "eeee",
+      "gender": "Male",
+      "age": 55,
+      "dayofInfection": "",
+      "daysSinceInfection": 55,
+      "role": "user",
+      "status": "Infected",
+      "cID": 555,
+      "recoverydate": "",
+      "locationInfection": "C#Gelephu",
+      "id": 3
+    },
+    {
+      "name": "name",
+      "userName": "nam",
+      "password": "555",
+      "conPassword": "555",
+      "gender": "Male",
+      "age": 55,
+      "dayofInfection": "",
+      "daysSinceInfection": 5,
+      "role": "user",
+      "status": "Infected",
+      "cID": 5555,
+      "recoverydate": "",
+      "locationInfection": "C#Phuntsholing",
+      "id": 5
+    }
+  ],
+  "clinics": [
+    {
+      "clinicName": "Paro Clinic",
+      "Location": "Paro",
+      "totalBed": "3",
+      "totalStaff": "6",
+      "nameSuperintendent": "Dorji",
+      "contactSuperintendent": "17801041",
+      "activeCase": "3",
+      "recoveredCase": "4",
+      "id": 21
+    },
+    {
+      "clinicName": "Thimphu Clinic",
+      "Location": "Thimphu",
+      "totalBed": "4",
+      "totalStaff": "6",
+      "nameSuperintendent": "Dorji",
+      "contactSuperintendent": "17808871",
+      "activeCase": "1",
+      "recoveredCase": "6",
+      "id": 22
+    },
+    {
+      "clinicName": "Gelephu Clinic",
+      "Location": "Gelephu",
+      "totalBed": "6",
+      "totalStaff": "8",
+      "nameSuperintendent": "Pema",
+      "contactSuperintendent": "7777777",
+      "activeCase": "7",
+      "recoveredCase": "0",
+      "id": 23
+    },
+    {
+      "clinicName": "SJ Clinic",
+      "Location": "SJongkhar",
+      "totalBed": "7",
+      "totalStaff": "9",
+      "nameSuperintendent": "Tshering",
+      "contactSuperintendent": "17777777",
+      "activeCase": "10",
+      "recoveredCase": "99",
+      "id": 24
+    },
+    {
+      "clinicName": "Pling Clinic",
+      "Location": "Phuntsholing",
+      "totalBed": "4",
+      "totalStaff": "7",
+      "nameSuperintendent": "Tashi",
+      "contactSuperintendent": "171717171",
+      "activeCase": "3",
+      "recoveredCase": "7",
+      "id": 25
+    },
+    {
+      "clinicName": "Bondey Clinic",
+      "Location": "Paro",
+      "totalBed": "6",
+      "totalStaff": "6",
+      "nameSuperintendent": "Raj",
+      "contactSuperintendent": "17888888",
+      "activeCase": "5",
+      "recoveredCase": "4",
+      "id": 26
+    },
+    {
+      "clinicName": "Olakha Clinic",
+      "Location": "Thimphu",
+      "totalBed": "7",
+      "totalStaff": "22",
+      "nameSuperintendent": "Choden",
+      "contactSuperintendent": "77774444",
+      "activeCase": "33",
+      "recoveredCase": "22",
+      "id": 27
+    }
+  ]
+}

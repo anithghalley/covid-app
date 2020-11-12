@@ -1,0 +1,113 @@
+
+<div class="main">
+  <p class="sign" align="center">SignUp</p>
+  <form class="form1" [formGroup]="signUpForm">
+
+       <input type="text"
+           class="un text-dark"
+           formControlName="name"
+           placeholder="Enter Name">
+
+       <input type="text"
+           class="un text-dark"
+           formControlName="userName"
+           placeholder="Create User Name">
+
+       <input type="password"
+           class="un text-dark"
+           formControlName="password"
+           placeholder="Create Password">
+
+       <input type="password"
+           class="un text-dark"
+           formControlName="conPassword"
+           placeholder="Confirm Password">
+       
+           <mat-select type="text" class="un text-dark" name="gender" formControlName="gender" placeholder="Enter Gender">  
+              <mat-option>-- Select Any --</mat-option>  
+              <mat-option value="Male">Male</mat-option>  
+              <mat-option value="Female">Female</mat-option>  
+          </mat-select>   
+
+       <input type="number"
+           class="un text-dark"
+           formControlName="age"
+           placeholder="Enter Age">
+
+              
+       <input
+           class="un text-dark"
+           formControlName="dateofInfection"
+           placeholder="Enter Infection Date"
+           input matInput [matDatepicker]="picker">
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            
+            
+
+       <!-- <input class="un text-dark"
+              formControlName="dateofInfection"
+              placeholder="Enter Infection Date"
+              matInput [matDatepicker]="picker">
+           <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+           <mat-datepicker #picker></mat-datepicker> -->
+
+       <!-- <mat-form-field class="demo-full-width">  
+              <input  name="dateofInfection" formControlName="dateofInfection" matInput [matDatepicker]="picker" placeholder="Date of Infection">  
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>  
+              <mat-datepicker touchUi="true" #picker></mat-datepicker>  
+       </mat-form-field>   -->
+
+       <input type="number"
+           class="un text-dark"
+           formControlName="daysSinceInfection"
+           placeholder="Enter Days Since Infection">
+
+       <!-- <input type="text"
+           class="un text-dark"
+           formControlName="status"
+           placeholder="Enter medical Status"> -->
+
+       <mat-select typr="text" class="un text-dark" name="status" formControlName="status" placeholder="Enter Medical Status">  
+           <mat-option>-- Select Any --</mat-option>  
+           <mat-option value="Recovered">Recovered</mat-option>  
+           <mat-option value="Infected">Infected</mat-option>  
+       </mat-select>   
+       
+
+       <input type="number"
+           class="un text-dark"
+           formControlName="cID"
+           placeholder="Enter CID number">
+
+
+       <input
+           class="un text-dark"
+           formControlName="recoveryDate"
+           placeholder="Enter Recovery Date"
+           input matInput [matDatepicker]="picker2">
+              <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+              <mat-datepicker #picker2></mat-datepicker>
+
+
+       <!-- <input type="text"
+           class="un text-dark"
+           formControlName="locationInfection"
+           placeholder="Enter Infection Location"> -->
+
+           <mat-select type="text" class="un text-dark" name="locationInfection" formControlName="locationInfection" placeholder="Location of Infection">  
+              <mat-option>-- Select Any --</mat-option>  
+              <mat-option value="Paro">Paro</mat-option>  
+              <mat-option value="Thimphu">Thimphu</mat-option>  
+              <mat-option value="Phuntsholing">Phuntsholing</mat-option>
+              <mat-option value="Gelephu">Gelephu</mat-option>
+              <mat-option value="SJongkhar">S/Jongkhar</mat-option>
+          </mat-select>  
+
+    <button class="submit" (click)="submit()">Sign Up</button>
+    <div *ngIf="success" class="login">
+      Signed In successfully!
+    </div>
+  </form>
+</div>
+<app-home></app-home>

@@ -1,0 +1,43 @@
+<div class="page-content p-5" id="content">
+  <h5 bg-dark text-white>Covid Update</h5>
+      <!--code start here-->
+
+
+  <table class="table bg-secondary">
+    <thead>
+    <tr>
+      <th scope="col">User ID</th>
+      <th scope="col">User Name</th>
+      <th scope="col">Gender</th>
+      <th scope="col">Age</th>
+      <th scope="col">Days Since Infected</th>
+      <th scope="col">Status</th>
+      <th scope="col">Location of Infected</th>
+    </tr>
+    </thead>
+    <tbody>
+      <h4>Recovered</h4>
+      <tr *ngFor="let user of this.recoveredUser">
+        <td *ngFor="let col of index">
+            {{user[col]}}
+        </td>
+        
+    </tr>
+    <hr>
+    <h4>Infected</h4>
+    <tr *ngFor="let user of this.infectedUser">
+        <td *ngFor="let col of index">
+            {{user[col]}}
+        </td>
+       
+    </tr>
+    </tbody>
+  </table>
+
+  
+
+
+
+      <!--code end here-->
+</div>
+<app-user></app-user>

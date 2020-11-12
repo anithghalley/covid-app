@@ -1,0 +1,55 @@
+<div class="page-content p-5" id="content">
+  
+  <h3 bg-dark text-white>COVID Update</h3>
+
+  <table class="table bg-secondary">
+    <thead>
+    <tr>
+      <th scope="col">User ID</th>
+      <th scope="col">User Name</th>
+      <th scope="col">Gender</th>
+      <th scope="col">Age</th>
+      <th scope="col">Days Since Infected</th>
+      <th scope="col">Status</th>
+      <th scope="col">Location of Infected</th>
+      <th scope="col">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+      <h4>Recovered</h4>
+      <tr *ngFor="let user of this.recoveredUser">
+        <td *ngFor="let col of index">
+            {{user[col]}}
+        </td>
+        <td>
+            <button class="btn-primary" (click)="deleteUser(user.id)">Delete</button>
+        </td>
+    </tr>
+    <hr>
+    <h5>Infected</h5>
+    <tr *ngFor="let user of this.infectedUser">
+        <td *ngFor="let col of index">
+            {{user[col]}}
+        </td>
+        <td>
+          <button class="btn-primary" (click)="deleteUser(user.id)">Delete</button>
+      </td>
+    </tr>
+    <!-- <tr *ngFor="let user of this.RecoveredUser">
+      <td>{{user.id}}</td>
+      <td>{{user.userName}}</td>
+      <td>{{user.gender}}</td>
+      <td>{{user.age}}</td>
+      <td>{{user.daysSinceInfected}}</td>
+      <td>{{user.status}}</td>
+      <td>{{user.locationInfected}}</td>
+      <td>
+        <button class="btn-primary" (click)="approve(user)">Approve</button>
+      </td>
+    </tr> -->
+    </tbody>
+  </table>
+
+  
+</div>
+<app-admin></app-admin>

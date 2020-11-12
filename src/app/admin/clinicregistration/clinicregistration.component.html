@@ -1,0 +1,57 @@
+    <!--code start here-->
+<h3>Clinic Registration</h3>
+<div class="main">
+    <form class="form1" formGroup="clinicForm">
+    
+        <input type="text"
+                class="un"
+                formControlName="clinicName"
+                placeholder="Enter Clinic Name">
+        
+        <input type="text"
+                class="un"
+                formControlName="location"
+                placeholder="Enter Clinic Location">
+
+        
+        
+        <input type="number"
+                class="un"
+                formControlName="totalBed"
+                placeholder="Enter Number of Bed">
+        
+        <input type="number"
+                class="un"
+                formControlName="totalStaff"
+                placeholder="Enter Number of Staff">
+        
+        <input type="text"
+                class="un"
+                formControlName="nameSuperintendent"
+                placeholder="Enter Name of Superintendent">
+        
+        <input type="text"
+                class="un"
+                formControlName="contactSuperintendent"
+                placeholder="Enter Contact of Superintendent">
+        
+        <input type="number"
+                class="un"
+                formControlName="activeCase"
+                placeholder="Enter total Active Cases">
+
+        <input type="number"
+                class="un"
+                formControlName="recoveredCase"
+                placeholder="Enter total Recovered Case">
+
+        <button class="submit" (click)="submit()">Register</button>
+        <div *ngIf="success" class="login">
+            Registered successfully!
+        </div>
+    </form>
+</div>
+
+
+<app-admin></app-admin>
+  
